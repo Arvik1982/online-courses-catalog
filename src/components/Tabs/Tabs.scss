@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    font-family: $font-family;
+    font-size: $base-bold-size;
+    font-weight: $base-bold-weight;
+    color: $gray-600;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &--active {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &__count {
+    font-size: $extra-small-bold-size;
+    font-weight: $extra-small-bold-weight;
+    color: inherit;
+  }
+}

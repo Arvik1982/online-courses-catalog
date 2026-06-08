@@ -1,0 +1,31 @@
+@use '../../styles/variables' as *;
+
+.search {
+  display: flex;
+  align-items: center;
+  background: $white;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  padding: 11px 16px;
+  gap: 8px;
+  height: 44px;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    color: $gray-600;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: $small-regular-size;
+    color: $gray-900;
+
+    &::placeholder {
+      color: $gray-600;
+    }
+  }
+}
