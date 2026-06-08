@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  base: '/online-courses-catalog/',
   root: '.',
   publicDir: 'public',
   build: {
