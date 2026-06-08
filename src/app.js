@@ -76,9 +76,9 @@ function renderTabs(root, state) {
 
 function renderDecorations(root) {
   const decorations = [
-    { name: 'dots', svg: '/assets/icons/dots.svg' },
-    { name: 'shape-left', svg: '/assets/icons/shape-left.svg' },
-    { name: 'shape-right', svg: '/assets/icons/shape-right.svg' },
+    { name: 'dots', svg: 'assets/icons/dots.svg' },
+    { name: 'shape-left', svg: 'assets/icons/shape-left.svg' },
+    { name: 'shape-right', svg: 'assets/icons/shape-right.svg' },
   ];
 
   decorations.forEach(({ name, svg }) => {
