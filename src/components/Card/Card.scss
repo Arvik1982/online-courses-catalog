@@ -1,0 +1,92 @@
+@use '../../styles/variables' as *;
+
+.card {
+  background-color: $white;
+  border: 1px solid $gray-300;
+  border-radius: 4px;
+  box-shadow: $shadow-small;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: $shadow-regular;
+  }
+
+  &__image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 1px 8px;
+    width: fit-content;
+
+    &-text {
+      color: $white;
+      font-size: $small-regular-size;
+      font-weight: $small-regular-weight;
+      line-height: 21px;
+      white-space: nowrap;
+    }
+
+    background-color: $success;
+
+    &--design {
+      background-color: $badge-design;
+    }
+
+    &--development {
+      background-color: $badge-development;
+    }
+
+    &--hr {
+      background-color: $warning;
+    }
+
+    &--management {
+      background-color: $info;
+    }
+  }
+
+  &__title {
+    font-size: $lead-bold-size;
+    font-weight: $lead-bold-weight;
+    line-height: 1.5;
+    color: $gray-900;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: $large-regular-size;
+  }
+
+  &__price {
+    color: $danger;
+    font-weight: $large-bold-weight;
+  }
+
+  &__divider {
+    color: $gray-300;
+  }
+
+  &__author {
+    color: $gray-700;
+    font-weight: $large-regular-weight;
+  }
+}
