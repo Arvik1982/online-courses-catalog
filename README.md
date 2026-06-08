@@ -4,6 +4,8 @@
 
 ## 🚀 Деплой
 
+[Посмотреть на GitHub Pages](https://arvik1982.github.io/online-courses-catalog/)
+
 ## 📋 Функционал
 
 - Адаптивная вёрстка
